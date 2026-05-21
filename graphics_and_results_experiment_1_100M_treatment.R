@@ -137,9 +137,11 @@ print(p)
 #  dpi = 300
 #)
 
-hypothesis(m, "pluralitySingular = 0")
-hypothesis(m, "pluralitySingular + regularityIrregular:pluralitySingular = 0")
-hypothesis(m, "regularityIrregular:pluralitySingular = 0")
+hypothesis(m, "pluralitySingular = 0") #tests the regular plural effect.
+
+hypothesis(m, "pluralitySingular + regularityIrregular:pluralitySingular = 0") #tests the regular plural effect
+
+hypothesis(m, "regularityIrregular:pluralitySingular = 0") #tests the regularity × plurality interaction. 
 
 
 #hyp <- hypothesis(...)
