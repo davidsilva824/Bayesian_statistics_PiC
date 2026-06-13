@@ -1,16 +1,16 @@
 "prior","prior_sd","effect","lnBF10"
 "N(0, 0.25)",0.25,"Regular plural",3.97342599606457
-"N(0, 0.25)",0.25,"Irregular plural",-0.373255223922845
+"N(0, 0.25)",0.25,"Irregular plural",-0.365619955116044
 "N(0, 0.25)",0.25,"Regularity × Plurality",3.36572256594982
 "N(0, 0.5)",0.5,"Regular plural",5.97419272308275
-"N(0, 0.5)",0.5,"Irregular plural",-0.623521446122509
+"N(0, 0.5)",0.5,"Irregular plural",-0.612758521057663
 "N(0, 0.5)",0.5,"Regularity × Plurality",7.66555246168116
 "N(0, 1)",1,"Regular plural",6.89482486938563
-"N(0, 1)",1,"Irregular plural",-1.15893894273235
+"N(0, 1)",1,"Irregular plural",-1.13083171564351
 "N(0, 1)",1,"Regularity × Plurality",6.41942762905609
 "N(0, 2)",2,"Regular plural",7.21618087212657
-"N(0, 2)",2,"Irregular plural",-1.79773607554069
+"N(0, 2)",2,"Irregular plural",-1.80160582860697
 "N(0, 2)",2,"Regularity × Plurality",6.46750760933722
 "N(0, 4)",4,"Regular plural",5.77215750597038
-"N(0, 4)",4,"Irregular plural",-2.46164280627839
+"N(0, 4)",4,"Irregular plural",-2.47126359301932
 "N(0, 4)",4,"Regularity × Plurality",23.8971455925582

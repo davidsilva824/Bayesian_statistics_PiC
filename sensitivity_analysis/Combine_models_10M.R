@@ -89,20 +89,50 @@ sensitivity_results <- lapply(prior_sds, function(prior_sd){
     prior(lkj(1), class=cor) +
     prior(exponential(1), class=sigma)
   
-  m <- brm(Surprisal.head ~ 1 + regularity * plurality +
-             (1 + regularity * plurality | model) +
-             (1 + regularity * plurality | set) +
-             (1 + regularity * plurality | Head),
-           data = dat,
-           prior = priors_surprisal,
-           sample_prior = "yes",
-           chains = 4, iter = 12000, warmup = 2000,
-           cores = 4,
-           backend = "cmdstanr",
-           file = paste0(
-             "C:/Users/Admin/Desktop/Dissertação/código/Bayesian_statistics_PiC/sensitivity_analysis/results_bayesean_experiment_1_10M_treatment_prior_",
-             prior_sd
-           ))
+  old_file <- paste0(
+    "C:/Users/Admin/Desktop/Dissertação/código/Bayesian_statistics_PiC/sensitivity_analysis/results_bayesean_experiment_1_10M_treatment_prior_",
+    prior_sd
+  )
+  
+  new_file <- paste0(
+    "C:/Users/Admin/Desktop/Dissertação/código/Bayesian_statistics_PiC/sensitivity_analysis/results_bayesean_experiment_1_10M_treatment_prior_",
+    prior_sd,
+    "_new"
+  )
+  
+  combined_file <- paste0(
+    "C:/Users/Admin/Desktop/Dissertação/código/Bayesian_statistics_PiC/sensitivity_analysis/results_bayesean_experiment_1_10M_treatment_prior_",
+    prior_sd,
+    "_combined.rds"
+  )
+  
+  m_old <- brm(Surprisal.head ~ 1 + regularity * plurality +
+                 (1 + regularity * plurality | model) +
+                 (1 + regularity * plurality | set) +
+                 (1 + regularity * plurality | Head),
+               data = dat,
+               prior = priors_surprisal,
+               sample_prior = "yes",
+               chains = 4, iter = 12000, warmup = 2000,
+               cores = 4,
+               backend = "cmdstanr",
+               file = old_file)
+  
+  m_new <- brm(Surprisal.head ~ 1 + regularity * plurality +
+                 (1 + regularity * plurality | model) +
+                 (1 + regularity * plurality | set) +
+                 (1 + regularity * plurality | Head),
+               data = dat,
+               prior = priors_surprisal,
+               sample_prior = "yes",
+               chains = 4, iter = 12000, warmup = 2000,
+               cores = 4,
+               backend = "cmdstanr",
+               file = new_file)
+  
+  m <- combine_models(m_old, m_new)
+  
+  saveRDS(m, combined_file)
   
   data.frame(
     prior = paste0("N(0, ", prior_sd, ")"),
@@ -122,7 +152,7 @@ sensitivity_results <- lapply(prior_sds, function(prior_sd){
 
 write.csv(
   sensitivity_results,
-  "sensitivity_analysis_experiment_1_10M.csv",
+  "sensitivity_analysis_experiment_1_10M_combined.csv",
   row.names = FALSE
 )
 
@@ -152,10 +182,9 @@ p <- ggplot(sensitivity_results,
 print(p)
 
 #ggsave(
-  #"sensitivity_analysis_experiment_1_10M.png",
-  #plot = p,
-  #width = 10,
-  #height = 5,
-  #dpi = 300
+#"sensitivity_analysis_experiment_1_10M_combined.png",
+#plot = p,
+#width = 10,
+#height = 5,
+#dpi = 300
 #)
-
