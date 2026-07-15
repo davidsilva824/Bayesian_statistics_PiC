@@ -3,12 +3,13 @@ library(dplyr)
 library(patchwork)
 
 ### Plot prior distributions for Experiment 1
-### One combined panel:
 ### A. Intercept slopes
 ### B. Random effects
 ### C. LKJ
 
-output_file <- "prior_distributions_experiment_1_panel.png"
+setwd("C:/Users/Admin/Desktop/Dissertação/código/Bayesian_statistics_PiC/for the thesis")
+
+output_file <- "prior_distributions_experiment_1_10M.png"
 
 ### Helper functions
 
@@ -128,7 +129,7 @@ K <- 4
 rho <- seq(-0.999, 0.999, length.out = 2000)
 
 lkj_data <- bind_rows(
-  lapply(c(3, 2, 1), function(shape_value) {
+  lapply(c(1), function(shape_value) {
     ci <- lkj_ci(eta = shape_value, K = K)
     
     data.frame(
