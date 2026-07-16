@@ -22,7 +22,7 @@ p_density <- pp_check(
   m_prior,
   prefix = "ppd",
   type = "dens_overlay",
-  ndraws = 100
+  ndraws = 100 #meter 250 e com 1000
 )
 
 p_mean <- pp_check(
@@ -30,7 +30,7 @@ p_mean <- pp_check(
   prefix = "ppd",
   type = "stat",
   stat = "mean",
-  ndraws = 100
+  ndraws = 100 #meter 250 e com 1000
 )
 
 p_sd <- pp_check(
@@ -38,7 +38,7 @@ p_sd <- pp_check(
   prefix = "ppd",
   type = "stat",
   stat = "sd",
-  ndraws = 100
+  ndraws = 100 #meter 250 e com 1000
 )
 
 p_prior_predictive <- p_density / p_mean / p_sd
