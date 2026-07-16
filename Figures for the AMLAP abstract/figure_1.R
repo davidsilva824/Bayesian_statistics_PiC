@@ -1,3 +1,5 @@
+setwd("C:/Users/Admin/Desktop/Dissertação/código/Bayesian_statistics_PiC/for the thesis")
+
 library(brms)
 library(ggplot2)
 library(cmdstanr)

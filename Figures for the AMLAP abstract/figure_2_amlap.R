@@ -71,7 +71,7 @@ ggsave(
   "forest_plot_treatment_3panels_10M_2.png",
   plot = p,
   width = 10,
-  height = 7,
+  height = 8,
   dpi = 300
 )
 
