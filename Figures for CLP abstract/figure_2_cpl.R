@@ -1,3 +1,7 @@
+setwd("C:/Users/Admin/Desktop/Dissertação/código/Bayesian_statistics_PiC/Figures for CLP abstract")
+
+
+
 library(brms)
 library(ggplot2)
 library(cmdstanr)
@@ -131,7 +135,7 @@ interaction_order_100M <- plot_dat %>%
   arrange(Estimate) %>%
   pull(Group)
 
-model_order <- c(interaction_order_10M, interaction_order_100M)
+model_order <- c(interaction_order_10M, "separator", interaction_order_100M)
 
 plot_dat$Group <- factor(
   plot_dat$Group,
@@ -163,11 +167,17 @@ p <- ggplot(plot_dat, aes(x = Group, y = Estimate)) +
     colour = "blue"
   ) +
   facet_wrap(~ effect, ncol = 3) +
+  scale_x_discrete(
+    drop = FALSE,
+    labels = function(x) ifelse(x == "separator", "", x)
+  ) +
+  
   labs(
     x = NULL,
     y = "Estimate"
   ) +
   theme(
+    panel.border = element_rect(colour = "black", fill = NA)
     text = element_text(size = 20, colour = "black"),
     strip.text = element_text(size = 25, colour = "black"),
     axis.text.y = element_text(size = 19, colour = "black"),

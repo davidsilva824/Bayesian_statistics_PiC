@@ -69,12 +69,12 @@ p_marginal <- ggplot(
   theme_light() +
     theme(
     strip.background = element_rect(fill = "white"),
-    strip.text = element_text(size = 20, colour = "black"),
+    strip.text = element_text(size = 22, colour = "black"),
     text = element_text(size = 14, colour = "black"),
     axis.title = element_text(size = 25),
     axis.text = element_text(size = 20,  colour = "black"),
     legend.title = element_text(size = 21),
-    legend.text = element_text(size = 18),
+    legend.text = element_text(size = 19),
     legend.position = c(0.55, 0.965),
     legend.justification = c(0, 0.5),
     panel.grid = element_blank()

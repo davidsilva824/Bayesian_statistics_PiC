@@ -1,0 +1,49 @@
+"Group","Hypothesis","Estimate","Est.Error","CI.Lower","CI.Upper","Evid.Ratio","Post.Prob","Star","effect"
+"babble_txt_BPE_with_spaces","(regularityIrregular:pluralitySingular) > 0",0.742062763267566,0.201835245152408,0.342208582175,1.14400997525,3635.36363636364,0.999725,"*","Regularity × Plurality
+ interaction"
+"babyLlama_100M","(regularityIrregular:pluralitySingular) > 0",0.731010544829352,0.204220667021548,0.3283113391,1.133554549475,1427.57142857143,0.9993,"*","Regularity × Plurality
+ interaction"
+"CLASS_IT","(regularityIrregular:pluralitySingular) > 0",0.708853971449036,0.206907473282958,0.28665383825,1.1083740206,850.063829787234,0.998825,"*","Regularity × Plurality
+ interaction"
+"gpt_2_100M","(regularityIrregular:pluralitySingular) > 0",0.719363658747264,0.204153812841626,0.306835340325,1.11619226725,1051.63157894737,0.99905,"*","Regularity × Plurality
+ interaction"
+"gpt_bert_100M_causal","(regularityIrregular:pluralitySingular) > 0",0.743160623511814,0.206682598034018,0.33553988165,1.1502639444,2351.94117647059,0.999575,"*","Regularity × Plurality
+ interaction"
+"gpt_bert_100M_masked","(regularityIrregular:pluralitySingular) > 0",0.742595732793037,0.201757350360414,0.347005538425,1.144107251675,2665.66666666667,0.999625,"*","Regularity × Plurality
+ interaction"
+"gpt_bert_100M_mixed","(regularityIrregular:pluralitySingular) > 0",0.764153423530881,0.205307227371172,0.3705392893,1.182006599325,3332.33333333333,0.9997,"*","Regularity × Plurality
+ interaction"
+"OPT_100M","(regularityIrregular:pluralitySingular) > 0",0.733579308743669,0.204930253130414,0.3275589056,1.13935516625,2351.94117647059,0.999575,"*","Regularity × Plurality
+ interaction"
+"babble_txt_BPE_with_spaces","(-pluralitySingular) > 0",1.16428640258517,0.311665756788584,0.53476654675,1.764781289875,3635.36363636364,0.999725,"*","Regular plural
+ effect"
+"babyLlama_100M","(-pluralitySingular) > 0",1.15114093746409,0.310316897151616,0.52627561,1.750421792425,3999,0.99975,"*","Regular plural
+ effect"
+"CLASS_IT","(-pluralitySingular) > 0",1.144470898608,0.312347754647444,0.5133338338,1.745960261675,2665.66666666667,0.999625,"*","Regular plural
+ effect"
+"gpt_2_100M","(-pluralitySingular) > 0",1.35067149169938,0.316091976460118,0.73838141531,1.9825250255,39999,0.999975,"*","Regular plural
+ effect"
+"gpt_bert_100M_causal","(-pluralitySingular) > 0",1.31239484011077,0.310575822609535,0.708407583725,1.9340206244,Inf,1,"*","Regular plural
+ effect"
+"gpt_bert_100M_masked","(-pluralitySingular) > 0",1.3235555759089,0.310349627056319,0.71529096605,1.94075736025,39999,0.999975,"*","Regular plural
+ effect"
+"gpt_bert_100M_mixed","(-pluralitySingular) > 0",1.28179917662227,0.307056907887962,0.678098939125,1.89376361695,Inf,1,"*","Regular plural
+ effect"
+"OPT_100M","(-pluralitySingular) > 0",1.1554469918968,0.30987930404891,0.535817694,1.75689972793,3999,0.99975,"*","Regular plural
+ effect"
+"babble_txt_BPE_with_spaces","(-(pluralitySingular+regularityIrregular:pluralitySingular)) > 0",0.422223639317602,0.328980680048778,-0.237319537566,1.055594805195,9.09081735620585,0.9009,"","Irregular plural
+ effect"
+"babyLlama_100M","(-(pluralitySingular+regularityIrregular:pluralitySingular)) > 0",0.420130392634739,0.328425249063712,-0.23421544905,1.064145491815,9.07810531620055,0.900775,"","Irregular plural
+ effect"
+"CLASS_IT","(-(pluralitySingular+regularityIrregular:pluralitySingular)) > 0",0.435616927158961,0.32907866330986,-0.22185137072,1.08264419198,9.84892866829401,0.907825,"","Irregular plural
+ effect"
+"gpt_2_100M","(-(pluralitySingular+regularityIrregular:pluralitySingular)) > 0",0.631307832952115,0.331904423622895,-0.0118546481749999,1.3020027383075,35.9344413665743,0.972925,"","Irregular plural
+ effect"
+"gpt_bert_100M_causal","(-(pluralitySingular+regularityIrregular:pluralitySingular)) > 0",0.569234216598956,0.328781360507759,-0.0734738754674999,1.217934610885,23.5248313917842,0.959225,"","Irregular plural
+ effect"
+"gpt_bert_100M_masked","(-(pluralitySingular+regularityIrregular:pluralitySingular)) > 0",0.580959843115864,0.32671018163769,-0.0538886671955,1.2339745759075,26.0453008789723,0.963025,"","Irregular plural
+ effect"
+"gpt_bert_100M_mixed","(-(pluralitySingular+regularityIrregular:pluralitySingular)) > 0",0.517645753091387,0.326528742515694,-0.126951048585,1.16569272245,17.06684733514,0.94465,"","Irregular plural
+ effect"
+"OPT_100M","(-(pluralitySingular+regularityIrregular:pluralitySingular)) > 0",0.421867683153134,0.328082064387162,-0.23222558744,1.06624428965,9.15228426395939,0.9015,"","Irregular plural
+ effect"
