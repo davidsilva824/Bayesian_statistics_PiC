@@ -5,7 +5,7 @@ library(dplyr)
 library(stringr)
 library(ggeffects)
 
-m <- readRDS("C:/Users/Admin/Desktop/Dissertação/código/satistics_PiC/Statistics_PiC/Bayesean_Statistics/surprisal_gaussian_experiment_1_10M_treatment.rds")
+m <- readRDS("C:/Users/Admin/Desktop/Dissertação/código/satistics_PiC/Statistics_PiC/Bayesean_Statistics/for the thesis/Models)
 
 
 

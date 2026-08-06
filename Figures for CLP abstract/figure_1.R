@@ -53,7 +53,7 @@ p_marginal <- ggplot(
     linewidth = 0.8,
     position = pd
   ) +
-  facet_wrap(~ training_size, ncol = 1) +
+  facet_wrap(~ training_size, ncol = 2) +
   scale_x_discrete(expand = expansion(add = c(0.5, 0.8))) +
   coord_cartesian(
     ylim = c(
@@ -75,7 +75,7 @@ p_marginal <- ggplot(
     axis.text = element_text(size = 20,  colour = "black"),
     legend.title = element_text(size = 21),
     legend.text = element_text(size = 19),
-    legend.position = c(0.55, 0.965),
+    legend.position = c(0.3, 0.9),
     legend.justification = c(0, 0.5),
     panel.grid = element_blank()
   )
@@ -84,8 +84,8 @@ print(p_marginal)
 ggsave(
   "plot_regularity_x_plurality_10M_100M_panel.png",
   plot = p_marginal,
-  width = 4,
-  height =11.3,
+  width = 8.5,
+  height =5,
   dpi = 300
 )
 
