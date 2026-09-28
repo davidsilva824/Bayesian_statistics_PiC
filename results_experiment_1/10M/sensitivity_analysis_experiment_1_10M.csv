@@ -1,0 +1,16 @@
+"prior","prior_sd","effect","lnBF10"
+"N(0, 0.75)",0.75,"Regular plural",9.61812674274253
+"N(0, 0.75)",0.75,"Irregular plural",-0.889909979377804
+"N(0, 0.75)",0.75,"Regularity × Plurality",6.93871512963523
+"N(0, 1.5)",1.5,"Regular plural",7.64821531534734
+"N(0, 1.5)",1.5,"Irregular plural",-1.55462134489147
+"N(0, 1.5)",1.5,"Regularity × Plurality",10.6422743647031
+"N(0, 3)",3,"Regular plural",7.73670587875962
+"N(0, 3)",3,"Irregular plural",-2.20794791387252
+"N(0, 3)",3,"Regularity × Plurality",6.64742610339276
+"N(0, 6)",6,"Regular plural",4.91467429573308
+"N(0, 6)",6,"Irregular plural",-2.89098693125935
+"N(0, 6)",6,"Regularity × Plurality",4.11875954745772
+"N(0, 12)",12,"Regular plural",29.4130322306536
+"N(0, 12)",12,"Irregular plural",-3.58089600361674
+"N(0, 12)",12,"Regularity × Plurality",15.9749406096182

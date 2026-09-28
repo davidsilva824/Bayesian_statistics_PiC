@@ -1,0 +1,6 @@
+"variable","prior","likelihood","diagnosis"
+"b_Intercept",0.0271893842764436,0.0183030622838302,"-"
+"b_pluralitySingular",0.0162990678315942,0.0189885331091064,"-"
+"b_regularityIrregular",0.0226576147538459,0.0346236756842406,"-"
+"b_regularityIrregular:pluralitySingular",0.0224502611049608,0.0133621505875709,"-"
+"sigma",0.0138570444433279,0.291703064991069,"-"

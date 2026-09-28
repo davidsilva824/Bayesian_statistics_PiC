@@ -6,9 +6,9 @@ library(stringr)
 library(ggeffects)
 library(rstan)
 
-setwd("C:/Users/Admin/Desktop/Dissertação/código/Bayesian_statistics_PiC/for the thesis/Results")
+setwd("C:/Users/david/Documents/GitHub/Bayesian_statistics_PiC/thesis/main_results")
 
-m <- readRDS("C:/Users/Admin/Desktop/Dissertação/código/Bayesian_statistics_PiC/for the thesis/Models/model_bayesean_experiment_1_10M_treatment.rds")
+m <- readRDS("C:/Users/david/Documents/GitHub/Bayesian_statistics_PiC/thesis/models/model_bayesean_experiment_1_10M_treatment.rds")
 
 summary(m)
 
@@ -139,14 +139,14 @@ ggsave(
   dpi = 300
 )
 
-hypothesis(m, "pluralitySingular = 0")
-hypothesis(m, "pluralitySingular + regularityIrregular:pluralitySingular = 0")
-hypothesis(m, "regularityIrregular:pluralitySingular = 0")
+hyp1 <- hypothesis(m, "pluralitySingular = 0")
+hyp2 <- hypothesis(m, "pluralitySingular + regularityIrregular:pluralitySingular = 0")
+hyp3 <- hypothesis(m, "regularityIrregular:pluralitySingular = 0")
 
+lnBF10_regular <- log(1 / hyp1$hypothesis$Evid.Ratio)
+lnBF10_irregular <- log(1 / hyp2$hypothesis$Evid.Ratio)
+lnBF10_interaction <- log(1 / hyp3$hypothesis$Evid.Ratio)
 
-hyp <- hypothesis(m, "pluralitySingular = 0")
-a <-hyp$hypothesis$Evid.Ratio
-
-
-invhyp <-1/hyp$hypothesis$Evid.Ratio
-log(invhyp)
+lnBF10_regular
+lnBF10_irregular
+lnBF10_interaction

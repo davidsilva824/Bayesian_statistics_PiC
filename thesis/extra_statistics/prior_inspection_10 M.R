@@ -2,13 +2,15 @@ library(ggplot2)
 library(dplyr)
 
 ### Plot prior distributions for Experiment 1
-### A. Intercept slopes
+### A. Intercept
+### A. Fixed effects
 ### B. Random effects
 ### C. LKJ(2)
 
-setwd("C:/Users/Admin/Desktop/Dissertação/código/Bayesian_statistics_PiC/for the thesis")
+setwd("C:/Users/david/Documents/GitHub/Bayesian_statistics_PiC/thesis/extra_statistics")
 
-output_file_A <- "prior_intercept_slopes_experiment_1_10M.png"
+output_file_A1 <- "prior_intercept_experiment_1_10M.png"
+output_file_A2 <- "prior_slopes_experiment_1_10M.png"
 output_file_B <- "prior_random_effects_experiment_1_10M.png"
 output_file_C <- "prior_lkj_experiment_1_10M.png"
 
@@ -51,36 +53,24 @@ lkj_ci <- function(eta, K) {
 }
 
 ### ------------------------------------------------------------
-### A. Intercept slopes
+### A. Intercept
 ### ------------------------------------------------------------
 
 x_intercept <- seq(0, 30, length.out = 2000)
-x_slopes <- seq(-4, 4, length.out = 2000)
 
-intercept_slopes_data <- bind_rows(
-  data.frame(
-    parameter = "Intercept\nNormal(10, 5), truncated at 0",
-    value = x_intercept,
-    density = dtruncnorm_lower(
-      x_intercept,
-      mean = 10,
-      sd = 5,
-      lower = 0
-    )
-  ),
-  data.frame(
-    parameter = "Slopes\nNormal(0, 1)",
-    value = x_slopes,
-    density = dnorm(
-      x_slopes,
-      mean = 0,
-      sd = 1
-    )
+intercept_data <- data.frame(
+  parameter = "Intercept\nNormal(10, 5), truncated at 0",
+  value = x_intercept,
+  density = dtruncnorm_lower(
+    x_intercept,
+    mean = 10,
+    sd = 5,
+    lower = 0
   )
 )
 
-p_intercept_slopes <- ggplot(
-  intercept_slopes_data,
+p_intercept <- ggplot(
+  intercept_data,
   aes(x = value, y = density)
 ) +
   geom_area(fill = "lightblue", alpha = 0.7) +
@@ -91,7 +81,7 @@ p_intercept_slopes <- ggplot(
     nrow = 1
   ) +
   labs(
-    title = "A. Intercept slopes",
+    title = "Intercept prior",
     x = "Parameter value",
     y = "Density"
   ) +
@@ -111,12 +101,70 @@ p_intercept_slopes <- ggplot(
     axis.text = element_text(size = 11)
   )
 
-print(p_intercept_slopes)
+print(p_intercept)
 
 ggsave(
-  output_file_A,
-  plot = p_intercept_slopes,
-  width = 9,
+  output_file_A1,
+  plot = p_intercept,
+  width = 4.5,
+  height = 4.5,
+  dpi = 300
+)
+
+### ------------------------------------------------------------
+### A. Fixed effects
+### ------------------------------------------------------------
+
+x_slopes <- seq(-12, 12, length.out = 2000)
+
+slopes_data <- data.frame(
+  parameter = "Fixed effects\nNormal(0, 2.5)",
+  value = x_slopes,
+  density = dnorm(
+    x_slopes,
+    mean = 0,
+    sd = 2.5
+  )
+)
+
+p_slopes <- ggplot(
+  slopes_data,
+  aes(x = value, y = density)
+) +
+  geom_area(fill = "lightblue", alpha = 0.7) +
+  geom_line(linewidth = 1) +
+  facet_wrap(
+    ~ parameter,
+    scales = "free",
+    nrow = 1
+  ) +
+  labs(
+    title = "Fixed-effects prior",
+    x = "Parameter value",
+    y = "Density"
+  ) +
+  theme_classic() +
+  theme(
+    text = element_text(size = 13),
+    plot.title = element_text(size = 16, hjust = 0.5),
+    strip.background = element_rect(
+      fill = "grey70",
+      colour = NA
+    ),
+    strip.text = element_text(
+      size = 11,
+      colour = "white"
+    ),
+    axis.title = element_text(size = 14),
+    axis.text = element_text(size = 11)
+  )
+
+print(p_slopes)
+
+ggsave(
+  output_file_A2,
+  plot = p_slopes,
+  width = 4.5,
   height = 4.5,
   dpi = 300
 )
@@ -164,7 +212,7 @@ p_random_effects <- ggplot(
 ) +
   geom_line(linewidth = 1.2) +
   labs(
-    title = "B. Random effects",
+    title = "Random-effect and residual SD priors",
     x = "SD",
     y = "Density",
     colour = "Prior distribution"
@@ -230,8 +278,7 @@ p_lkj <- ggplot(
   geom_area(fill = "lightblue", alpha = 0.7) +
   geom_line(linewidth = 1.2) +
   labs(
-    title = "C. LKJ(2)",
-    subtitle = unique(lkj_data$prior),
+    title = "Random-effect correlation prior",
     x = "Correlation",
     y = "Density"
   ) +

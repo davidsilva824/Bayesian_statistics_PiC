@@ -1,4 +1,4 @@
-setwd("C:/Users/Admin/Desktop/Dissertação/código/Bayesian_statistics_PiC/Figures for CLP abstract")
+setwd("C:/Users/david/Documents/GitHub/Bayesian_statistics_PiC/Figures for CLP abstract")
 
 
 library(brms)
@@ -14,11 +14,11 @@ library(ggeffects)
 # --------------------------------------------------
 
 m_10M <- readRDS(
-  "C:/Users/Admin/Desktop/Dissertação/código/Bayesian_statistics_PiC/for the thesis/Models/model_bayesean_experiment_1_10M_treatment.rds"
+  "C:/Users/david/Documents/GitHub/Bayesian_statistics_PiC/thesis/models/model_bayesean_experiment_1_10M_treatment.rds"
 )
 
 m_100M <- readRDS(
-  "C:/Users/Admin/Desktop/Dissertação/código/Bayesian_statistics_PiC/for the thesis/Models/model_bayesean_experiment_1_100M_treatment.rds"
+  "C:/Users/david/Documents/GitHub//Bayesian_statistics_PiC/thesis/models/model_bayesean_experiment_1_100M_treatment.rds"
 )
 
 
@@ -85,12 +85,12 @@ m100_eff_irreg <- hypothesis(
 # --------------------------------------------------
 
 m10_eff_int$effect <- "Regularity\n×\nPlurality"
-m10_eff_reg$effect <- "Regular\nplural"
-m10_eff_irreg$effect <- "Irregular\nplural"
+m10_eff_reg$effect <- "Regular\nEffect"
+m10_eff_irreg$effect <- "Irregular\nEffect"
 
 m100_eff_int$effect <- "Regularity\n×\nPlurality"
-m100_eff_reg$effect <- "Regular\nplural"
-m100_eff_irreg$effect <- "Irregular\nplural"
+m100_eff_reg$effect <- "Regular\nEffect"
+m100_eff_irreg$effect <- "Irregular\nEffect"
 
 
 # --------------------------------------------------
@@ -131,8 +131,8 @@ plot_dat <- bind_rows(
       effect,
       levels = c(
         "Regularity\n×\nPlurality",
-        "Regular\nplural",
-        "Irregular\nplural"
+        "Regular\nEffect",
+        "Irregular\nEffect"
       )
     )
   )

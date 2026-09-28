@@ -6,9 +6,9 @@ library(stringr)
 library(ggeffects)
 library(rstan)
 
-setwd("C:/Users/Admin/Desktop/Dissertação/código/Bayesian_statistics_PiC/for the thesis/Results")
+setwd("C:/Users/david/Documents/GitHub/Bayesian_statistics_PiC/thesis/main_results")
 
-m <- readRDS("C:/Users/Admin/Desktop/Dissertação/código/Bayesian_statistics_PiC/for the thesis/Models/model_bayesean_experiment_1_100M_treatment.rds")
+m <- readRDS("C:/Users/david/Documents/GitHub/Bayesian_statistics_PiC/thesis/models/model_bayesean_experiment_1_100M_treatment.rds")
 
 summary(m)
 
@@ -144,5 +144,10 @@ hypothesis(m, "pluralitySingular + regularityIrregular:pluralitySingular = 0")
 hypothesis(m, "regularityIrregular:pluralitySingular = 0")
 
 
-#hyp <- hypothesis(...)
-#1 / hyp$hypothesis$Evid.Ratio
+hyp <- hypothesis(m, "pluralitySingular = 0")
+a <-hyp$hypothesis$Evid.Ratio
+
+
+invhyp <-1/hyp$hypothesis$Evid.Ratio
+invhyp
+2*log(invhyp)

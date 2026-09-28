@@ -1,4 +1,4 @@
-setwd("C:/Users/Admin/Desktop/Dissertação/código/Bayesian_statistics_PiC/for the thesis")
+setwd("C:/Users/david/Documents/GitHub/Bayesian_statistics_PiC/Figures for the AMLAP abstract")
 
 library(brms)
 library(ggplot2)
@@ -7,7 +7,7 @@ library(dplyr)
 library(stringr)
 library(ggeffects)
 
-m <- readRDS("C:/Users/Admin/Desktop/Dissertação/código/satistics_PiC/Statistics_PiC/Bayesean_Statistics/surprisal_gaussian_experiment_1_10M_treatment.rds")
+m <- readRDS("C:/Users/david/Documents/GitHub/Bayesian_statistics_PiC/thesis/models/model_bayesean_experiment_1_10M_treatment.rds")
 
 
 ### Alternative graphic: regularity on x-axis, plurality in legend

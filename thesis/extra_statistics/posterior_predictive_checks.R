@@ -1,4 +1,4 @@
-setwd("C:/Users/Admin/Desktop/Dissertação/código/Bayesian_statistics_PiC/for the thesis")
+setwd("C:/Users/david/Documents/GitHub/Bayesian_statistics_PiC/thesis/extra_statistics")
 
 
 # Load packages
@@ -11,7 +11,7 @@ library(patchwork)
 # Load Bayesian model
 
 m <- readRDS(
-  "C:/Users/Admin/Desktop/Dissertação/código/Bayesian_statistics_PiC/results_bayesian_experiment_1_10M_treatment.rds"
+  "C:/Users/david/Documents/GitHub/Bayesian_statistics_PiC/thesis/models/model_bayesean_experiment_1_10M_treatment.rds"
 )
 
 

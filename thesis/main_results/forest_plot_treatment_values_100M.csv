@@ -1,49 +1,49 @@
 "Group","Hypothesis","Estimate","Est.Error","CI.Lower","CI.Upper","Evid.Ratio","Post.Prob","Star","effect"
-"babble_txt_BPE_with_spaces","(regularityIrregular:pluralitySingular) > 0",0.742062763267566,0.201835245152408,0.342208582175,1.14400997525,3635.36363636364,0.999725,"*","Regularity × Plurality
+"babble_txt_BPE_with_spaces","(regularityIrregular:pluralitySingular) > 0",0.737881030077135,0.203031267865243,0.340130862625,1.142230642635,2221.22222222222,0.99955,"*","Regularity × Plurality
  interaction"
-"babyLlama_100M","(regularityIrregular:pluralitySingular) > 0",0.731010544829352,0.204220667021548,0.3283113391,1.133554549475,1427.57142857143,0.9993,"*","Regularity × Plurality
+"babyLlama_100M","(regularityIrregular:pluralitySingular) > 0",0.727129706822291,0.204777543339533,0.32080956125,1.1322042991425,1599,0.999375,"*","Regularity × Plurality
  interaction"
-"CLASS_IT","(regularityIrregular:pluralitySingular) > 0",0.708853971449036,0.206907473282958,0.28665383825,1.1083740206,850.063829787234,0.998825,"*","Regularity × Plurality
+"CLASS_IT","(regularityIrregular:pluralitySingular) > 0",0.705089543536355,0.206922358670217,0.283671183075,1.103994853075,633.920634920635,0.998425,"*","Regularity × Plurality
  interaction"
-"gpt_2_100M","(regularityIrregular:pluralitySingular) > 0",0.719363658747264,0.204153812841626,0.306835340325,1.11619226725,1051.63157894737,0.99905,"*","Regularity × Plurality
+"gpt_2_100M","(regularityIrregular:pluralitySingular) > 0",0.715055794620076,0.202565023419584,0.307449120725,1.1071753115875,929.232558139535,0.998925,"*","Regularity × Plurality
  interaction"
-"gpt_bert_100M_causal","(regularityIrregular:pluralitySingular) > 0",0.743160623511814,0.206682598034018,0.33553988165,1.1502639444,2351.94117647059,0.999575,"*","Regularity × Plurality
+"gpt_bert_100M_causal","(regularityIrregular:pluralitySingular) > 0",0.738643995340941,0.205639013564234,0.334326619915,1.1449295695,1427.57142857143,0.9993,"*","Regularity × Plurality
  interaction"
-"gpt_bert_100M_masked","(regularityIrregular:pluralitySingular) > 0",0.742595732793037,0.201757350360414,0.347005538425,1.144107251675,2665.66666666667,0.999625,"*","Regularity × Plurality
+"gpt_bert_100M_masked","(regularityIrregular:pluralitySingular) > 0",0.738898824463526,0.20108009265007,0.34655453125,1.138745909,2104.26315789474,0.999525,"*","Regularity × Plurality
  interaction"
-"gpt_bert_100M_mixed","(regularityIrregular:pluralitySingular) > 0",0.764153423530881,0.205307227371172,0.3705392893,1.182006599325,3332.33333333333,0.9997,"*","Regularity × Plurality
+"gpt_bert_100M_mixed","(regularityIrregular:pluralitySingular) > 0",0.761411410131813,0.204671865772632,0.371073483025,1.1779179842525,3999,0.99975,"*","Regularity × Plurality
  interaction"
-"OPT_100M","(regularityIrregular:pluralitySingular) > 0",0.733579308743669,0.204930253130414,0.3275589056,1.13935516625,2351.94117647059,0.999575,"*","Regularity × Plurality
+"OPT_100M","(regularityIrregular:pluralitySingular) > 0",0.728850015317798,0.204705167982251,0.32252183925,1.1293392439,1289.32258064516,0.999225,"*","Regularity × Plurality
  interaction"
-"babble_txt_BPE_with_spaces","(-pluralitySingular) > 0",1.16428640258517,0.311665756788584,0.53476654675,1.764781289875,3635.36363636364,0.999725,"*","Regular plural
+"babble_txt_BPE_with_spaces","(-pluralitySingular) > 0",1.15455266731001,0.311631213760043,0.526981083685,1.75435623665,1999,0.9995,"*","Regular plural
  effect"
-"babyLlama_100M","(-pluralitySingular) > 0",1.15114093746409,0.310316897151616,0.52627561,1.750421792425,3999,0.99975,"*","Regular plural
+"babyLlama_100M","(-pluralitySingular) > 0",1.14032892275186,0.311778667113024,0.511633858225,1.74502038788,1903.7619047619,0.999475,"*","Regular plural
  effect"
-"CLASS_IT","(-pluralitySingular) > 0",1.144470898608,0.312347754647444,0.5133338338,1.745960261675,2665.66666666667,0.999625,"*","Regular plural
+"CLASS_IT","(-pluralitySingular) > 0",1.13637342695476,0.313115125249707,0.50777556175,1.7431586127,2351.94117647059,0.999575,"*","Regular plural
  effect"
-"gpt_2_100M","(-pluralitySingular) > 0",1.35067149169938,0.316091976460118,0.73838141531,1.9825250255,39999,0.999975,"*","Regular plural
+"gpt_2_100M","(-pluralitySingular) > 0",1.3389534337853,0.316889705508685,0.7334766463,1.9873019275,39999,0.999975,"*","Regular plural
  effect"
-"gpt_bert_100M_causal","(-pluralitySingular) > 0",1.31239484011077,0.310575822609535,0.708407583725,1.9340206244,Inf,1,"*","Regular plural
+"gpt_bert_100M_causal","(-pluralitySingular) > 0",1.3005703048631,0.311455501302167,0.689887469385,1.92142756707225,19999,0.99995,"*","Regular plural
  effect"
-"gpt_bert_100M_masked","(-pluralitySingular) > 0",1.3235555759089,0.310349627056319,0.71529096605,1.94075736025,39999,0.999975,"*","Regular plural
+"gpt_bert_100M_masked","(-pluralitySingular) > 0",1.31290037880878,0.311689774966265,0.706242560075,1.941347134,39999,0.999975,"*","Regular plural
  effect"
-"gpt_bert_100M_mixed","(-pluralitySingular) > 0",1.28179917662227,0.307056907887962,0.678098939125,1.89376361695,Inf,1,"*","Regular plural
+"gpt_bert_100M_mixed","(-pluralitySingular) > 0",1.27197560213955,0.30676336410133,0.67146253775,1.88208415405,19999,0.99995,"*","Regular plural
  effect"
-"OPT_100M","(-pluralitySingular) > 0",1.1554469918968,0.30987930404891,0.535817694,1.75689972793,3999,0.99975,"*","Regular plural
+"OPT_100M","(-pluralitySingular) > 0",1.14632351063161,0.310202577078962,0.5292898905,1.7465793065,2856.14285714286,0.99965,"*","Regular plural
  effect"
-"babble_txt_BPE_with_spaces","(-(pluralitySingular+regularityIrregular:pluralitySingular)) > 0",0.422223639317602,0.328980680048778,-0.237319537566,1.055594805195,9.09081735620585,0.9009,"","Irregular plural
+"babble_txt_BPE_with_spaces","(-(pluralitySingular+regularityIrregular:pluralitySingular)) > 0",0.416671637232872,0.330426093445338,-0.2479664544,1.0548137739995,8.62695547533093,0.896125,"","Irregular plural
  effect"
-"babyLlama_100M","(-(pluralitySingular+regularityIrregular:pluralitySingular)) > 0",0.420130392634739,0.328425249063712,-0.23421544905,1.064145491815,9.07810531620055,0.900775,"","Irregular plural
+"babyLlama_100M","(-(pluralitySingular+regularityIrregular:pluralitySingular)) > 0",0.413199215929569,0.328194722492508,-0.23769100762125,1.05264479484,8.65950253561942,0.896475,"","Irregular plural
  effect"
-"CLASS_IT","(-(pluralitySingular+regularityIrregular:pluralitySingular)) > 0",0.435616927158961,0.32907866330986,-0.22185137072,1.08264419198,9.84892866829401,0.907825,"","Irregular plural
+"CLASS_IT","(-(pluralitySingular+regularityIrregular:pluralitySingular)) > 0",0.431283883418404,0.329557386160185,-0.218281559695,1.083160326625,9.36537963202902,0.903525,"","Irregular plural
  effect"
-"gpt_2_100M","(-(pluralitySingular+regularityIrregular:pluralitySingular)) > 0",0.631307832952115,0.331904423622895,-0.0118546481749999,1.3020027383075,35.9344413665743,0.972925,"","Irregular plural
+"gpt_2_100M","(-(pluralitySingular+regularityIrregular:pluralitySingular)) > 0",0.623897639165221,0.333024825963005,-0.0190204102249999,1.29505074945,33.6320346320346,0.971125,"","Irregular plural
  effect"
-"gpt_bert_100M_causal","(-(pluralitySingular+regularityIrregular:pluralitySingular)) > 0",0.569234216598956,0.328781360507759,-0.0734738754674999,1.217934610885,23.5248313917842,0.959225,"","Irregular plural
+"gpt_bert_100M_causal","(-(pluralitySingular+regularityIrregular:pluralitySingular)) > 0",0.561926309522157,0.328928185920441,-0.0846651734625,1.2132818925525,21.9753015508329,0.956475,"","Irregular plural
  effect"
-"gpt_bert_100M_masked","(-(pluralitySingular+regularityIrregular:pluralitySingular)) > 0",0.580959843115864,0.32671018163769,-0.0538886671955,1.2339745759075,26.0453008789723,0.963025,"","Irregular plural
+"gpt_bert_100M_masked","(-(pluralitySingular+regularityIrregular:pluralitySingular)) > 0",0.574001554345252,0.326404422003612,-0.061905928025,1.22826560275,25.1096605744125,0.9617,"","Irregular plural
  effect"
-"gpt_bert_100M_mixed","(-(pluralitySingular+regularityIrregular:pluralitySingular)) > 0",0.517645753091387,0.326528742515694,-0.126951048585,1.16569272245,17.06684733514,0.94465,"","Irregular plural
+"gpt_bert_100M_mixed","(-(pluralitySingular+regularityIrregular:pluralitySingular)) > 0",0.510564192007733,0.326695583730975,-0.1367165096075,1.15635635275,16.0721297481861,0.941425,"","Irregular plural
  effect"
-"OPT_100M","(-(pluralitySingular+regularityIrregular:pluralitySingular)) > 0",0.421867683153134,0.328082064387162,-0.23222558744,1.06624428965,9.15228426395939,0.9015,"","Irregular plural
+"OPT_100M","(-(pluralitySingular+regularityIrregular:pluralitySingular)) > 0",0.417473495313817,0.327584144823698,-0.2341332997,1.052210904,8.96512207274539,0.89965,"","Irregular plural
  effect"

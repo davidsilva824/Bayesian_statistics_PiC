@@ -1,0 +1,4 @@
+"variable","rhat","ess_bulk","ess_tail","check"
+"cor_Head__regularityIrregular__pluralitySingular",1.00070248198996,8206.57207914187,16478.6329363347,"Largest Rhat"
+"b_Intercept",1.00031607443604,7089.10659877465,12780.1631939633,"Smallest Bulk ESS"
+"sd_set__regularityIrregular:pluralitySingular",1.00010347449749,13503.6872909393,9015.65921921209,"Smallest Tail ESS"
